@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+            background-color: #f7f8fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            width: 100%;
+            max-width: 360px;
+            transition: all 0.3s ease;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        p {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 18px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 15px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background-color: #fafafa;
+            outline: none;
+        }
+
+        .input-group input:focus {
+            border-color: #c0c4d3;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(192, 196, 211, 0.2);
+        }
+
+        .input-group .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: right;
+            font-size: 14px;
+            color: #8592a4;
+            margin-bottom: 25px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .forgot-password:hover {
+            color: #536582;
+        }
+
+        .login-btn {
+            background-color: #6c7ae0;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #5964c6;
+            box-shadow: 0 4px 15px rgba(108, 122, 224, 0.2);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 0;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .divider span {
+            background-color: #fff;
+            padding: 0 10px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .social-login button {
+            width: 48%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .google-btn {
+            background-color: #e57471;
+        }
+
+        .google-btn:hover {
+            background-color: #d65e5a;
+        }
+
+        .facebook-btn {
+            background-color: #92aad5;
+        }
+
+        .facebook-btn:hover {
+            background-color: #8199c0;
+        }
+
+        .sign-up {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .sign-up a {
+            color: #6c7ae0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .sign-up a:hover {
+            color: #4e5db9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Welcome back!</h2>
+        <p>Start managing your finance faster and better</p>
+
+        <form action="#" class="login-form">
+            <div class="input-group">
+                <input type="email" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="At least 8 characters" required>
+                <span class="toggle-password">👁️</span>
+            </div>
+
+            <a href="#" class="forgot-password">Forgot password?</a>
+
+            <button type="submit" class="login-btn">Login</button>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <div class="social-login">
+                <button class="google-btn">Google</button>
+                <button class="facebook-btn">Facebook</button>
+            </div>
+
+            <p class="sign-up">Don’t you have an account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
