@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #454c4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 260px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            font-size: 14px;
+            position: relative;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img:hover {
+            transform: scale(1.07);
+        }
+
+        .card img {
+            width: 250px;
+            height: 150px;
+            border-radius: 50% 50%;
+            height: auto;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #00c853;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 8px;
+            border-radius: 4px;
+        }
+
+        .title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #000000;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .discount {
+            background-color: #ffdede;
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 2px 5px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .location,
+        .rating {
+            display: flex;
+            align-items: center;
+            color: #666;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .location img,
+        .rating img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+
+        .rating span {
+            margin-left: 5px;
+            color: #fbc02d;
+        }
+
+        .diskon {
+            color: #f36161;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="malioboro.jpg" alt="malioboro">
+        <div class="content">
+            <div class="badge">Beli Lokal</div>
+            <h3 class="title">ORIGINAL Novel MALIOBORO AT MIDNIGHT (Skysphire) - Bukune - Edisi Reguler</h3>
+            <p class="price">Rp100.500
+            <div class="original-price">Rp150.000 </div>
+            </p>
+            <div class="discount">Diskon 33%</div>
+
+            <div class="location">
+                <img src="tokped.png" alt="check">
+                Kota Sumedang
+            </div>
+
+            <div class="rating">
+                <img src="star.png" alt="rating">
+                <span>5.0</span> | 500+ terjual
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
